@@ -11,7 +11,7 @@ $code.forEach(code_block=> {
 
     /// Code settings
     let syntax_flag = code_block.dataset.syntax || false
-    const data_height = code_block.dataset.height || "100%"
+    const data_height = code_block.dataset.height 
     const data_type = code_block.dataset.type || "text"
     
     if(data_type === "text"){
