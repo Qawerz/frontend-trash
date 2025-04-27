@@ -1,10 +1,8 @@
 # js-terminal
->[!IMPORTANT]
->Moved to [Qawerz/frontend-trash](https://github.com/Qawerz/frontend-trash/)
 
 Simple javascript terminal
 
-[Live Demo](https://qawerz.github.io/js-terminal/terminal.html)
+[Live Demo](https://qawerz.github.io/frontend-trash/js-terminal)
 
 #### Commands:
 * help
@@ -28,7 +26,8 @@ Put this code in to `<body>`
   <span id="prompt">$ </span><input autofocus="true" id="cmdinput" type="text"  onkeypress="keypress_handle(event, this)" />
 </span>
 ```
-![screenshot of sample](https://raw.githubusercontent.com/Qawerz/js-terminal/main/cmd.png)
+![image](https://github.com/user-attachments/assets/a5bc5013-b478-464c-ae4b-0714f57589cd)
+
 
 #### New commands
 ```js
