@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CodeQ</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body{background-color:#272B33;}
+    </style>
+</head>
+<body>
+<div class='code' data-type='JavaScript' data-syntax="true">
+function copy(index){
+    const $codes = document.querySelectorAll('.code')
+    const codesarr = []
+    $codes.forEach(code => codesarr.push(code))
+    const code = codesarr.find(code => code.dataset.codeid == index)
+    let raw_code = ``
+    const table = code.querySelector('table').children
+    for (let i = 0; i < table.length; i++) {
+        if(table[i].querySelectorAll('td')[1].querySelector('div').innerHTML != "&nbsp;"){
+            raw_code += table[i].querySelectorAll('td')[1].querySelector('div').innerHTML+"\n"
+        } else raw_code += ' \n'
+    }
+    navigator.clipboard.writeText(raw_code)
+}
+</div>
+<br>
+<div class='code' dark data-syntax="true" data-type='JavaScript'>
+function copy(index){
+    const $codes = document.querySelectorAll('.code')
+    const codesarr = []
+    $codes.forEach(code => codesarr.push(code))
+    const code = codesarr.find(code => code.dataset.codeid == index)
+    let raw_code = ''
+    const table = code.querySelector('table').children
+    for (let i = 0; i < table.length; i++) {
+        if(table[i].querySelectorAll('td')[1].querySelector('div').innerHTML != ''){
+            raw_code += table[i].querySelectorAll('td')[1].querySelector('div').innerHTML+'\n'
+        } else raw_code += ' \n'
+    }
+    navigator.clipboard.writeText(raw_code)
+}
+</div>
+<br>
+<div class='code' dark data-syntax="true" data-type='Python'>
+def get_vowels(String):
+    return [each for each in String if each in 'aeiou']
+get_vowels('animal')
+get_vowels('sky') 
+get_vowels('football')
+</div>
+<!-- <script src="https://pastebin.com/embed_js/dHuNRCbk"></script> -->
+<script type='text/javascript' src='script.js'></script>
+</body>
+
+</html>
