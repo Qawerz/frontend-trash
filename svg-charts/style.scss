@@ -1,0 +1,22 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #191919;
+}
+
+.svg-chart {
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+    background-color: #fff;
+
+}
+
+.container {
+    display: grid;
+    gap: 1rem;
+}
