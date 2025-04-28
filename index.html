@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Qawerz/frontend-trash</title>
+		<link rel="stylesheet" href="/bubbles/style.css" />
+		<link rel="stylesheet" href="/obsidianite-theme-css/style.css" />
+        <style>
+            :root{
+                --color1: 195, 228, 255; 
+                --color2: 110, 195, 244; 
+                --color3: 234, 226, 255;  
+                --color4: 185, 190, 255;
+                --color-bg1:black;
+                --color-bg2:black;
+                --circle-size: 100%;
+            } 
+
+            .container {
+                background: rgba(0, 0, 0, .65);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(30px) brightness(60%) contrast(60%);
+                box-shadow: 0px 4px 30px rgba(0, 0, 0, .1);
+                color: white;
+            }
+
+            .cyber-box {
+                --border-color: white;
+                --border-thick: 1px;
+                /* width: 100px;
+                height: 100px; */
+                padding: 1rem;
+
+                background:
+                    linear-gradient(to right, var(--border-color) var(--border-thick), transparent var(--border-thick)) 0% 0%,
+                    linear-gradient(to right, var(--border-color) var(--border-thick), transparent var(--border-thick)) 0% 100%,
+
+                    linear-gradient(to left, var(--border-color) var(--border-thick), transparent var(--border-thick)) 100% 0%,
+                    linear-gradient(to left, var(--border-color) var(--border-thick), transparent var(--border-thick)) 100% 100%,
+
+                    linear-gradient(to bottom, var(--border-color) var(--border-thick), transparent var(--border-thick)) 100% 0%,
+                    linear-gradient(to bottom, var(--border-color) var(--border-thick), transparent var(--border-thick)) 0% 0%,
+                    
+                    linear-gradient(to top, var(--border-color) var(--border-thick), transparent var(--border-thick)) 0% 100%,
+                    linear-gradient(to top, var(--border-color) var(--border-thick), transparent var(--border-thick)) 100% 100%;
+
+                background-repeat: no-repeat;
+                background-size: 20px 20px;
+
+
+				h1 {
+					a {
+						text-decoration: none;
+						color: #0FB6D6;
+					}
+				}
+            }
+        </style>
+	</head>
+	<body>
+        <div class="container" >
+			<div class="cyber-box" style="--border-color: #0FB6D6;">
+				<h1><a href="https://github.com/Qawerz/frontend-trash/">Qawerz/frontend-trash</a></h1>
+			</div>
+
+			<h3>Some garbage</h3>
+
+			<ul>
+				<li><a href="https://qawerz.github.io/frontend-trash/obsidianite-theme-css"><b>obsidianite-theme-css</b></a></li>
+				<li><a href="https://qawerz.github.io/frontend-trash/bubbles"><b>bubbles</b></a></li>
+				<li><a href="https://qawerz.github.io/frontend-trash/js-terminal"><b>js-terminal</b></a></li>
+				<li><a href="https://qawerz.github.io/frontend-trash/code-block"><b>code-block</b></a></li>
+				<li><a href="https://qawerz.github.io/frontend-trash/svg-charts"><b>svg-charts</b></a></li>
+			</ul>
+        </div>
+		
+		<div class="gradient-bg">
+			<svg xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur
+							in="SourceGraphic"
+							stdDeviation="10"
+							result="blur"
+						/>
+						<feColorMatrix
+							in="blur"
+							mode="matrix"
+							values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+							result="goo"
+						/>
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+					<filter id="grain">
+						<feTurbulence
+							type="fractalNoise"
+							baseFrequency=".1"
+							numOctaves="3"
+							stitchTiles="stitch"
+						/>
+					</filter>
+				</defs>
+			</svg>
+			<div class="gradients-container">
+				<div class="g1"></div>
+				<div class="g2"></div>
+				<div class="g3"></div>
+				<div class="g4"></div>
+				<div class="g5"></div>
+				<div class="interactive"></div>
+
+				<!-- <div class="grain"></div> -->
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
